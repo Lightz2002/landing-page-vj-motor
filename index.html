@@ -10,26 +10,32 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
-      <nav class="navbar">
-        <ul class="nav-list">
-          <li class="nav-list-item">
-            <a href="#intro" class="nav-link"> Intro </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="#intro" class="nav__link"> Intro </a>
           </li>
-          <li class="nav-list-item">
-            <a href="#about" class="nav-link"> About </a>
+          <li class="nav__list-item">
+            <a href="#about" class="nav__link"> About </a>
           </li>
-          <li class="nav-list-item">
-            <a href="#contact_us" class="nav-link"> Contact </a>
+          <li class="nav__list-item">
+            <a href="#contact_us" class="nav__link"> Contact </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main class="main" id="#intro">
-      <section class="intro">
+    <main class="main">
+      <section class="intro" id="#Intro">
         <div class="overlay"></div>
         <div class="intro__desc">
           <h1 class="intro__title">Motor Bermasalah? VJ In Aja!</h1>
@@ -49,14 +55,77 @@
           </div>
           <div class="feature__card">
             <i class="fas fa-history feature__card-icon"></i>
-            <div class="feature__card-desc">Konsultasi Gratis</div>
+            <div class="feature__card-desc">Konsultasi Gratis Tanpa Batas</div>
           </div>
           <div class="feature__card">
-            <i class="fas fa-percentage feature__card-icon"></i>
-            <div class="feature__card-desc">Harga Murah Servis Berkualitas</div>
+            <i class="fas fa-bolt feature__card-icon"></i>
+            <div class="feature__card-desc">
+              Motor Balik Dalam Waktu Singkat
+            </div>
           </div>
         </div>
       </section>
+
+      <section class="contact" id="#contact">
+        <div class="form-wrapper">
+          <form action="" class="form">
+            <h2 class="contact__title">Contact</h2>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer id="#footer" class="footer">
+      <div class="footer__logo footer__item">
+        <img src="img/hero.jpeg" alt="logo vj motor" />
+      </div>
+
+      <div class="footer__desc footer__item">
+        <h3 class="footer-title">Info</h3>
+        <h5 class="footer__text">Komp Air Mas Blok A2 No.2 Batam Centr</h5>
+        <h5 class="footer__text">Telp.(0778) 467 010</h5>
+        <h5 class="footer__text">Telp.(0778) 467 010</h5>
+      </div>
+
+      <div class="footer__social footer__item">
+        <h3 class="footer-title">Social</h3>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="" class="footer__link">
+              <img
+                src="https://img.icons8.com/color/48/000000/instagram-new--v1.png"
+                width="40"
+              />
+            </a>
+          </li>
+          <li class="footer__list-item">
+            <a href="" class="footer__link">
+              <img
+                src="https://img.icons8.com/color/50/000000/shopee.png"
+                width="40"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Telp.(0778) 467 010 -->
+    <!-- Hp. 0811 770 195 -->
+    <!-- Komp Air Mas Blok A2 No.2 Batam Centre -->
   </body>
 </html>
