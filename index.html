@@ -16,10 +16,18 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
+        <div class="navbar-brand">
+          <i class="fas fa-car"></i>
+          <h3>VJ Motor</h3>
+        </div>
+        <div class="navbar-button">
+          <i class="fas fa-bars"></i>
+        </div>
         <ul class="nav__list">
           <li class="nav__list-item">
             <a href="#intro" class="nav__link"> Intro </a>
@@ -36,18 +44,24 @@
 
     <main class="main">
       <section class="intro" id="intro">
-        <div class="overlay"></div>
         <div class="intro__desc">
           <h1 class="intro__title">Motor Bermasalah? VJ In Aja!</h1>
           <p class="intro__text">
             Mesin motor anda sudah tidak bertenaga? Lampu motor anda suka
             kedip-kedip? Suka berhenti secara tiba-tiba dijalan?
           </p>
+          <div class="intro__cta">
+            <button>Contact Us</button>
+          </div>
+        </div>
+
+        <div class="intro__image">
+          <img src="img/hero.jpg" alt="Bengkel Mobil" />
         </div>
       </section>
 
       <section class="feature" id="feature">
-        <h2>Feature</h2>
+        <h2 class="feature__title">Feature</h2>
         <div class="feature-grid">
           <div class="feature__card">
             <i class="fas fa-tag feature__card-icon"></i>
@@ -70,6 +84,9 @@
         <div class="form-wrapper">
           <form action="" class="form">
             <h2 class="contact__title">Contact</h2>
+            <small class="contact__info"
+              >Kirimkan kami komentar, kritik atau sebagainya</small
+            >
             <div class="form-group">
               <label for="name">Name</label>
               <input type="name" />
@@ -80,7 +97,7 @@
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea name="message" id="" cols="30" rows="10"></textarea>
+              <textarea name="message" id="" cols="30" rows="5"></textarea>
             </div>
 
             <button type="submit" class="btn-submit">Submit</button>
