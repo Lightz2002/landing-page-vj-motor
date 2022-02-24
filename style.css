@@ -141,9 +141,27 @@ body {
   margin-bottom: 1rem;
 }
 
-.intro__cta button {
+.intro__cta {
   border: none;
+  padding: 0;
   background: var(--blue);
+  transition: all 0.3s;
+}
+
+.intro__cta:hover {
+  background: var(--white);
+  border: 1px solid var(--blue);
+}
+
+.intro__cta:hover a {
+  color: var(--blue);
+}
+
+.intro__cta a {
+  display: block;
+  padding: 1rem 1.8rem;
+  width: 100%;
+  height: 100%;
   color: var(--white);
 }
 
